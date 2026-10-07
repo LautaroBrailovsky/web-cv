@@ -212,3 +212,258 @@ body {
   }
 }
 
+.card {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  
+  
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  margin-left: 7rem; 
+  
+ 
+  max-width: 450px;
+  background-color: var(--color-bg-page);
+}
+
+.card__image {
+  
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.card__content {
+  
+  padding: 0.75rem 1rem;
+}
+
+.card__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-text-heading);
+}
+
+.card__meta {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  color: var(--color-text-meta);
+  margin-top: 0.25rem;
+}
+
+
+.writing {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.writing__date {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-meta);
+  flex: 0 0 7rem;
+}
+
+.writing__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-heading);
+}
+
+.writing__description {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-body);
+}
+
+
+.speaking {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.speaking__date {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-meta);
+  flex: 0 0 7rem;
+}
+
+.speaking__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-heading);
+}
+
+.speaking__location {
+  width: 100%;
+  padding-left: 7rem; 
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-body);
+}
+
+
+.sideproject {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.sideproject__date {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-meta);
+  flex: 0 0 7rem;
+}
+
+.sideproject__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-heading);
+}
+
+
+.education {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.education__date {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-meta);
+  flex: 0 0 7rem;
+}
+
+.education__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-heading);
+}
+
+.education__location {
+  width: 100%;
+  padding-left: 7rem;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--color-text-body);
+}
+
+
+.contact {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact__title {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--color-text-heading);
+  margin-bottom: 1rem;
+}
+
+.contact__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact__item {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+
+.contact__label {
+  color: var(--color-text-meta);
+  flex: 0 0 7rem;
+}
+
+.contact__link {
+  color: var(--color-text-heading);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.contact__link:hover {
+  text-decoration: underline;
+}
+
+.contact__arrow {
+  color: var(--color-text-meta);
+  font-size: 0.75rem;
+}
+
+
+
+
+@media (max-width: 729px) {
+  
+  
+  .work-experience,
+  .writing,
+  .speaking,
+  .sideproject,
+  .education,
+  .contact__item {
+    flex-direction: column;
+  }
+
+  .work-experience__date,
+  .writing__date,
+  .speaking__date,
+  .sideproject__date,
+  .education__date,
+  .contact__label {
+    flex: auto;
+    margin-bottom: 0.25rem; 
+  }
+
+  
+  .speaking__location,
+  .education__location {
+    padding-left: 0;
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 50rem; 
+    margin: 6rem auto; 
+  }
+  
+  html {
+    font-size: 110%; 
+  }
+}
